@@ -51,7 +51,9 @@ Results are written under `results/`:
 - Identical splits across methods (CV generator)
 
 ## License
-MIT (see LICENSE).
+This project is released under the MIT License.
+If you use this code in your research, please cite the associated work.
+
 
 ## Baselines
 Baselines are implemented in `src/experiments/baselines.py`. See `docs/baselines.md`.
