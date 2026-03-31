@@ -1,0 +1,3 @@
+dataset: gisette
+output_tag: "b4_gisette"
+include_plots: true

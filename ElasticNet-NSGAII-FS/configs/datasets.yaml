@@ -1,0 +1,36 @@
+datasets:
+  madelon:
+    id: B5
+    name: MADELON
+    source: "UCI"
+    url: "https://archive.ics.uci.edu/ml/datasets/madelon"
+    format: "csv"            # expected after extraction
+    target_col: "y"
+  gisette:
+    id: B4
+    name: GISETTE
+    source: "UCI"
+    url: "https://archive.ics.uci.edu/ml/datasets/Gisette"
+    format: "csv"
+    target_col: "y"
+  arcene:
+    id: B1
+    name: ARCENE
+    source: "UCI"
+    url: "https://archive.ics.uci.edu/ml/datasets/Arcene"
+    format: "csv"
+    target_col: "y"
+  dexter:
+    id: B2
+    name: DEXTER
+    source: "UCI"
+    url: "https://archive.ics.uci.edu/ml/datasets/dexter"
+    format: "svmlight"
+    target_col: null
+  dorothea:
+    id: B3
+    name: DOROTHEA
+    source: "UCI"
+    url: "https://archive.ics.uci.edu/ml/datasets/dorothea"
+    format: "svmlight"
+    target_col: null

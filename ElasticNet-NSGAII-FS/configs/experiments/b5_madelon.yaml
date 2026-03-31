@@ -1,0 +1,3 @@
+dataset: madelon
+output_tag: "b5_madelon"
+include_plots: true

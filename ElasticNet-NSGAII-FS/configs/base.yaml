@@ -1,0 +1,31 @@
+seed: 42
+n_jobs: -1
+cv:
+  n_splits: 5
+  n_repeats: 3
+  shuffle: true
+
+evaluation:
+  classifier: "logreg"   # logreg | linear_svm
+  metric: "accuracy"
+
+nsga2:
+  population_size: 60
+  generations: 80
+  crossover_rate: 0.9
+  base_mutation_rate: 0.10
+  guidance_gamma: 0.85
+
+elastic_net:
+  alpha: 0.5
+  lambda_: 0.01
+  epsilon: 1.0e-12
+
+selection:
+  omega: [0.50, 0.25, 0.25]   # weights for utility U(s) over normalized objectives
+  knee_top_k: 10
+
+baselines:
+  enabled: true
+  methods: ["nsga2_vanilla", "elasticnet_topk", "lasso_logreg", "mi_topk", "random_topk"]
+  k_grid: [10, 20, 50, 100, 200, 500]
